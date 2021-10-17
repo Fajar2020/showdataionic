@@ -6,6 +6,14 @@ const routes: Routes = [
   {
     path: '',
     component: HomePage,
+  },
+  {
+    path: 'search-result/:cityId',
+    loadChildren: () => import('./search-result/search-result.module').then( m => m.SearchResultPageModule)
+  },
+  {
+    path: 'detail/:id',
+    loadChildren: () => import('./detail/detail.module').then( m => m.DetailPageModule)
   }
 ];
 

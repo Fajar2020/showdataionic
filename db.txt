@@ -1,0 +1,8 @@
+CREATE TABLE doctors (
+	id serial PRIMARY KEY,
+	name VARCHAR (150) UNIQUE NOT NULL,
+	description VARCHAR (255),
+	thumbnail VARCHAR (255),
+	location_id INT NOT NULL,
+	price VARCHAR (10) DEFAULT '0'
+);

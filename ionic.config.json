@@ -1,5 +1,7 @@
 {
   "name": "ShowData",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
